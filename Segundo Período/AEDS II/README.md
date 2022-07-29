@@ -14,13 +14,13 @@ Algumas questões apresentam arquivos de log com o tempo de execução e numero 
 
 Codigos-fonte das estruturas desenvolvidas: [AEDS II](https://github.com/icei-pucminas/aeds2)
 
-1. Algoritmos de Pesquisa [TP-02](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo%20(2022.1)/AEDS%20II/TP-02)
+1. Algoritmos de Pesquisa [TP-02](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/AEDS%20II/TP-02)
 2. Somatórios 
 3. Fundamentos de Análise de Algoritmos
 4. Estruturas de dados Básicas Lineares
-5. Ordenação em Memória Principal [TP-03](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo%20(2022.1)/AEDS%20II/TP-03)
+5. Ordenação em Memória Principal [TP-03](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/AEDS%20II/TP-03)
 6. Estrtuturas de dados Básicas Flexíveis
-7. Árvores Binárias [TP-04](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo%20(2022.1)/AEDS%20II/TP-04)
+7. Árvores Binárias [TP-04](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/AEDS%20II/TP-04)
 8. Balanceamento de Árvores 
 9. Tabelas e Dicionários
 

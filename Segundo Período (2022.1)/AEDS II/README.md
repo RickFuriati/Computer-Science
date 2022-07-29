@@ -4,6 +4,7 @@ Conceitos mais Aprofundados de programações, com foco em estruturas de dados e
 ### Trabalhos Praticos
 
 Trabalhos desenvolvidos para reforçar e entender os conceitos estudados na prática. Os trabalhos levaram como base um banco de dados de filmes (The Movie DB) para manipulação dos algoritmos e estruturas desenvilvidas.
+  - *filmes.zip:* Banco de dados utilizado, deve estar localizado na pasta "tmp"
 
 Cada questão dos trabalhos possuem o código desenvolvido, entrada e saída padrão e a saída gerada a partir do código desenvolvido.
 Algumas questões apresentam arquivos de log com o tempo de execução e numero de comparações e movimentações entre registros.

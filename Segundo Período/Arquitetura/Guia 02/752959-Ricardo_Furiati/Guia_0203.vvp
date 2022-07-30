@@ -1,0 +1,58 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x5561206e00d0 .scope module, "Guia_0203" "Guia_0203" 2 7;
+ .timescale 0 0;
+v0x5561206cb080_0 .var "b", 7 0;
+v0x556120713f40_0 .var/real "x", 0 0;
+S_0x5561206e0250 .scope begin, "main" "main" 2 15, 2 15 0, S_0x5561206e00d0;
+ .timescale 0 0;
+    .scope S_0x5561206e00d0;
+T_0 ;
+    %pushi/real 0, 4065; load=0.00000
+    %store/real v0x556120713f40_0;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %end;
+    .thread T_0;
+    .scope S_0x5561206e00d0;
+T_1 ;
+    %fork t_1, S_0x5561206e0250;
+    %jmp t_0;
+    .scope S_0x5561206e0250;
+t_1 ;
+    %vpi_call 2 16 "$display", "Guia_02 - Exercicio 3 Conversao de binario para base indicada" {0 0 0};
+    %pushi/vec4 29, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %vpi_call 2 20 "$display", "Alternativa A) Binario: %8b  base 4: %d.%d%d%d", v0x5561206cb080_0, &PV<v0x5561206cb080_0, 6, 2>, &PV<v0x5561206cb080_0, 4, 2>, &PV<v0x5561206cb080_0, 2, 2>, &PV<v0x5561206cb080_0, 0, 2> {0 0 0};
+    %pushi/real 0, 4065; load=0.00000
+    %store/real v0x556120713f40_0;
+    %pushi/vec4 148, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %vpi_call 2 25 "$display", "Alternativa B) Binario: %8b  base 8: %d.%o%o", v0x5561206cb080_0, v0x556120713f40_0, &PV<v0x5561206cb080_0, 5, 3>, &PV<v0x5561206cb080_0, 2, 3> {0 0 0};
+    %pushi/vec4 38, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %vpi_call 2 29 "$display", "Alternativa C) Binario: %8b  base 8: %x.%x", v0x5561206cb080_0, &PV<v0x5561206cb080_0, 6, 2>, &PV<v0x5561206cb080_0, 0, 6> {0 0 0};
+    %pushi/real 1073741824, 4066; load=1.00000
+    %store/real v0x556120713f40_0;
+    %pushi/vec4 204, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %vpi_call 2 34 "$display", "Alternativa D) Binario: %8b  base 8: %d.%o%o", v0x5561206cb080_0, v0x556120713f40_0, &PV<v0x5561206cb080_0, 5, 3>, &PV<v0x5561206cb080_0, 2, 3> {0 0 0};
+    %pushi/vec4 221, 0, 8;
+    %store/vec4 v0x5561206cb080_0, 0, 8;
+    %vpi_call 2 39 "$display", "Alternativa E) Binario: %8b  base 8: %x.%x", v0x5561206cb080_0, &PV<v0x5561206cb080_0, 4, 4>, &PV<v0x5561206cb080_0, 0, 4> {0 0 0};
+    %end;
+    .scope S_0x5561206e00d0;
+t_0 %join;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Guia_0203.v";

@@ -1,0 +1,92 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x56450a73a030 .scope module, "Guia_0105" "Guia_0105" 2 6;
+ .timescale 0 0;
+v0x56450a74e440_0 .var "a", 71 0;
+v0x56450a74e4e0_0 .var "b", 47 0;
+v0x56450a78e7a0_0 .var "c", 111 0;
+v0x56450a78e8a0_0 .var "d1", 0 7;
+v0x56450a78e980_0 .var "d2", 0 7;
+v0x56450a78eab0_0 .var "d3", 0 7;
+v0x56450a78eb90_0 .var "d4", 0 7;
+v0x56450a78ec70_0 .var "d5", 0 7;
+v0x56450a78ed50_0 .var "e1", 0 7;
+v0x56450a78ee30_0 .var "e2", 0 7;
+v0x56450a78ef10_0 .var "e3", 0 7;
+v0x56450a78eff0_0 .var "e4", 0 7;
+v0x56450a78f0d0_0 .var "e5", 0 7;
+v0x56450a78f1b0_0 .var "e6", 0 7;
+S_0x56450a73a1b0 .scope begin, "main" "main" 2 27, 2 27 0, S_0x56450a73a030;
+ .timescale 0 0;
+    .scope S_0x56450a73a030;
+T_0 ;
+    %pushi/vec4 1347765037, 0, 32; draw_string_vec4
+    %pushi/vec4 1298755169, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 115, 0, 8; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %store/vec4 v0x56450a74e440_0, 0, 72;
+    %pushi/vec4 842019378, 0, 32; draw_string_vec4
+    %pushi/vec4 11569, 0, 16; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %store/vec4 v0x56450a74e4e0_0, 0, 48;
+    %pushi/vec4 1113943151, 0, 32; draw_string_vec4
+    %pushi/vec4 541618034, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 1769631598, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 29797, 0, 16; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %store/vec4 v0x56450a78e7a0_0, 0, 112;
+    %pushi/vec4 84, 0, 8;
+    %store/vec4 v0x56450a78e8a0_0, 0, 8;
+    %pushi/vec4 97, 0, 8;
+    %store/vec4 v0x56450a78e980_0, 0, 8;
+    %pushi/vec4 114, 0, 8;
+    %store/vec4 v0x56450a78eab0_0, 0, 8;
+    %pushi/vec4 100, 0, 8;
+    %store/vec4 v0x56450a78eb90_0, 0, 8;
+    %pushi/vec4 101, 0, 8;
+    %store/vec4 v0x56450a78ec70_0, 0, 8;
+    %pushi/vec4 66, 0, 8;
+    %store/vec4 v0x56450a78ed50_0, 0, 8;
+    %pushi/vec4 46, 0, 8;
+    %store/vec4 v0x56450a78ee30_0, 0, 8;
+    %pushi/vec4 72, 0, 8;
+    %store/vec4 v0x56450a78ef10_0, 0, 8;
+    %pushi/vec4 116, 0, 8;
+    %store/vec4 v0x56450a78eff0_0, 0, 8;
+    %pushi/vec4 101, 0, 8;
+    %store/vec4 v0x56450a78f0d0_0, 0, 8;
+    %pushi/vec4 46, 0, 8;
+    %store/vec4 v0x56450a78f1b0_0, 0, 8;
+    %end;
+    .thread T_0;
+    .scope S_0x56450a73a030;
+T_1 ;
+    %fork t_1, S_0x56450a73a1b0;
+    %jmp t_0;
+    .scope S_0x56450a73a1b0;
+t_1 ;
+    %vpi_call 2 28 "$display", "Guia_01 - Exercicio 5 Conversao de strings para tabela ASCII " {0 0 0};
+    %vpi_call 2 29 "$display", "Alternativa A) String: %s  ASCII(hexadecimal - 16): %x %x %x %x %x %x %x %x %x", v0x56450a74e440_0, &PV<v0x56450a74e440_0, 64, 8>, &PV<v0x56450a74e440_0, 56, 8>, &PV<v0x56450a74e440_0, 48, 8>, &PV<v0x56450a74e440_0, 40, 8>, &PV<v0x56450a74e440_0, 32, 8>, &PV<v0x56450a74e440_0, 24, 8>, &PV<v0x56450a74e440_0, 16, 8>, &PV<v0x56450a74e440_0, 8, 8>, &PV<v0x56450a74e440_0, 0, 8> {0 0 0};
+    %vpi_call 2 30 "$display", "Alternativa B) String: %s  ASCII(hexadecimal - 16): %x %x %x %x %x %x", v0x56450a74e4e0_0, &PV<v0x56450a74e4e0_0, 40, 8>, &PV<v0x56450a74e4e0_0, 32, 8>, &PV<v0x56450a74e4e0_0, 24, 8>, &PV<v0x56450a74e4e0_0, 16, 8>, &PV<v0x56450a74e4e0_0, 8, 8>, &PV<v0x56450a74e4e0_0, 0, 8> {0 0 0};
+    %vpi_call 2 31 "$display", "Alternativa C) String: %s  ASCII(binario - 2): %b %b %b %b %b %b %b %b %b %b %b %b %b %b", v0x56450a78e7a0_0, &PV<v0x56450a78e7a0_0, 104, 8>, &PV<v0x56450a78e7a0_0, 96, 8>, &PV<v0x56450a78e7a0_0, 88, 8>, &PV<v0x56450a78e7a0_0, 80, 8>, &PV<v0x56450a78e7a0_0, 72, 8>, &PV<v0x56450a78e7a0_0, 64, 8>, &PV<v0x56450a78e7a0_0, 56, 8>, &PV<v0x56450a78e7a0_0, 48, 8>, &PV<v0x56450a78e7a0_0, 40, 8>, &PV<v0x56450a78e7a0_0, 32, 8>, &PV<v0x56450a78e7a0_0, 24, 8>, &PV<v0x56450a78e7a0_0, 16, 8>, &PV<v0x56450a78e7a0_0, 8, 8>, &PV<v0x56450a78e7a0_0, 0, 8> {0 0 0};
+    %vpi_call 2 32 "$display", "Alternativa D) string: %o %o %o %o %o  ASCII: %s %s %s %s %s", v0x56450a78e8a0_0, v0x56450a78e980_0, v0x56450a78eab0_0, v0x56450a78eb90_0, v0x56450a78ec70_0, v0x56450a78e8a0_0, v0x56450a78e980_0, v0x56450a78eab0_0, v0x56450a78eb90_0, v0x56450a78ec70_0 {0 0 0};
+    %vpi_call 2 33 "$display", "Alternativa E) string: %x %x %x %x %x  ASCII: %s %s %s %s %s", v0x56450a78ed50_0, v0x56450a78ee30_0, v0x56450a78ef10_0, v0x56450a78eff0_0, v0x56450a78f0d0_0, v0x56450a78ed50_0, v0x56450a78ee30_0, v0x56450a78ef10_0, v0x56450a78eff0_0, v0x56450a78f0d0_0 {0 0 0};
+    %end;
+    .scope S_0x56450a73a030;
+t_0 %join;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Guia_0105.v";

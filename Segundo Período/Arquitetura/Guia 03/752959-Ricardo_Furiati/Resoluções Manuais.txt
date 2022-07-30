@@ -1,0 +1,218 @@
+Aluno: Ricardo Henrique Guedes Furiati
+Matrícula: 752959
+Curso: Ciência da Computação - Manhã 
+Disciplina: Arquitetura de Computadores
+
+--------------- Guia 03 ---------------
+_________________________________________________________________________________
+01)Determinar os complementos para os valores e as quantidades de bits indicadas:
+_________________________________________________________________________________
+
+a) C1,6(1011) base 2
+6 bits: 001011 
+Complemento de 1: 110100
+
+b) C1,8 (1010) base 2
+8 bits: 00001010
+Complemento de 1: 11110101
+
+c) C2,6) (110011) base 2
+6 bits: 110011  
+Complemento de 1: 001100
+Complemento de 2: 001101
+
+d) C2,7 (10111) base 2
+7 bits: 0010111
+Complemento de 1: 1101000
+Complemento de 2: 1101001
+
+e) C2,8 (110101) base 2
+8 bits: 00110101
+Complemento de 1: 11001010
+Complemento de 2: 11001011
+
+_________________________________________________________________________________
+02)Determinar os complementos para os valores e as quantidades de bits indicadas:
+_________________________________________________________________________________
+
+a) C1,6 (213) base 4
+Conversão para binário: 100111 (base 2)
+6 bits: 100111
+Complemento de 1: 011000
+
+b) C1,8 (6D) base 16
+Conversão para binário: 1101101
+8 bits: 01101101
+Complemento de 1: 10010010
+
+c) C2,6 (321) base 4
+Conversão para binário: 111001
+6 bits: 111001
+Complemento de 1: 000110
+Complemento de 2: 000111
+
+d) C2,7 (175) base 8
+Conversão para binário: 1111101
+7 bits: 1111101
+Complemento de 1: 0000010
+Complemento de 2: 0000011
+
+e) C2,8 (F4) base 16
+Conversão para binário: 11110100
+8 bits: 11110100
+Complemento de 1: 00001011
+Complemento de 2: 00001100
+
+__________________________________________________________________________________
+03)Determinar os valores positivos equivalentes aos complementos de dois indicados
+__________________________________________________________________________________
+
+a) 10101 (base 2) para base 10
+Subtraindo uma unidade: 10100
+Invertendo os bits: 01011
+Convertendo para base 10: 11 
+
+b) 110111 (base 2) para base 10
+Subtraindo uma unidade: 110110
+Invertendo os bits: 110110
+Convertendo para base 10: 54
+
+c) 110010 (base 2) para base 2
+Subtraindo uma unidade: 110001
+Invertendo os bits: 1001110
+
+d) 1011101 (base 2) para base 2
+Subtraindo uma unidade: 1011100
+Invertendo os bits: 0100011
+
+e) 10110101 (base 2) para base 16
+Subtraindo uma unidade: 10110100
+Invertendo os bits: 01001011
+Convertendo para base 16: 4B
+
+____________________________________________________________________
+04)Fazer as operações indicadas mediante uso de complemento de dois:
+____________________________________________________________________
+
+a) 11100 (base 2) - 1101 (base 2)
+Subtraendo: 1101
+            01101 (5 bits)
+            10010 (Complemento de 1)
+            10011 (Complemento de 2)
+
+Operação:   11100
+           +10011
+           ------
+         (1)11111       
+
+b)  101,1001 - 10,01 
+Subtraendo: 0010,0100 (8 bits)
+            1101,1011 (Complemento de 1)
+            1101,1100 (Complemento de 2)
+
+Operação: 0101,1001
+         +1101,1100
+          ---------
+          0011,0101 (base 2)
+
+c) 213 (base 4) - 123 (base 4)
+Passando para binário: 100111 (base 2) - 11011 (base 2)
+Subtraendo: 11011
+            011011 (6 bits)
+            100100 (Complemento de 1)
+            100101 (Complemento de 2)
+            
+Operação: 100111
+         +100101
+          ------
+       (1)001100 (base 2) = 30 (base 4)
+
+d) 312 (base 8) - 123 (base 8)
+Passando para binário: 11001010 (base 2) - 1010011 (base 2)
+Subtraendo: 1010011 
+            01010011 (8 bits)
+            10101100 (Complemento de 1)
+            10101101
+
+Operação:  11001010
+          +10101101
+           --------
+        (1)01110111 (base 2) = 167 (base 8)
+
+e) 9D1 (base 16) - A1B (base 16)
+Passando para binário: 100111010001 (base 2) - 101000011011 (base 2)
+Subtraendo: 101000011011 (12 bits)
+            010111100100 (Complemento de 1)
+            010111100101 (Complemento de 2)
+
+Operaçãoo:  100111010001
+           +010111100101
+            ------------
+            111110110110 (base 2) =  FB6 (base 16)
+
+____________________________________________________________________________________________
+05)Executar as operações abaixo,armazenar seus dados e resultados em registradores de 8 bits
+____________________________________________________________________________________________
+
+a) 101100 (base 2) - 1101 (base 2)
+Passando para 8 bits: 00101100 - 00001101
+Subtraendo: 00001101
+            11110010 (Complemento de 1)
+            11110011 (Complemento de 2)
+    
+Operação:  00101100
+          +11110011
+           --------
+        (1)00011111  = 00011111 (base 2)
+
+b) 101,1010 (base 2) - 2,3 (base 8)
+Passando pra binário: 101,1010 - 010,011
+Passando para 8 bits: 0101,1010 - 0010,0110
+Subtraendo: 0010,0110
+            1101,1001 (Complemento de 1)
+            1111,1101
+
+Operação: 0101,1010
+         +1111,1101 
+          ---------
+       (1)0011,1100 = 0011,1100 (base 2)
+
+c) 231 (base 4) - F (base 16)
+Passando para binario: 101101 (base 2) - 1111 (base 2)
+Passando para 8 bits: 00101101 - 00001111
+Subtraendo: 00001111
+            11110000 (Complemento de 1)
+            11110001 (Complemento de 2)
+            
+Operação: 00101101
+         +11110001  
+          --------
+       (1)00011110 = 00011110 (base 2)
+
+d) DC (base 16) - 1001011 (base 2)
+Passando para binário: 11011100 (base 2) - 1100101 (base 2)
+Passando para 8 bits: 11011100 - 01100101
+Subtraendo: 01100101
+            10011010 (Complemento de 1)
+            10011011 (Complemento de 2)
+
+Operação: 11011100
+         +01100101
+          --------
+       (1)01000001 = 01000001 (base 2)
+
+e) 36 (base 10) - 2B (base 16)
+Passando para binário: 100100 - 101011
+Passando para 8 bits: 00100100 - 00101011
+Subtraendo: 00101011
+            11010100 (Complemento de 1)
+            11010101 (Complemento de 2)
+
+Operação: 00100100 
+         +11010101  
+          --------
+          11111001 (base 2) 
+
+
+
+                         

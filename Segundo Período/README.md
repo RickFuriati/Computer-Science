@@ -5,7 +5,7 @@
 **Disciplinas:**
 - [Algoritmos e Estruturas de Dados II](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/AEDS%20II)
 - Bancos de Dados
-- Arquitetura de Computadores
+- [Arquitetura de Computadores](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/Arquitetura)
 - Introdução a Sistemas Inteligentes
 - [Trabalho Interdisciplinar: Bancos de Dados](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/TI:BD)
 - Cultura Religiosa

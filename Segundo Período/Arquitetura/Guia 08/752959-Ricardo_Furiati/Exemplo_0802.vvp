@@ -1,0 +1,222 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55d99e5974f0 .scope module, "Exemplo0802" "Exemplo0802" 2 22;
+ .timescale 0 0;
+v0x55d99e5c21f0_0 .var "a", 3 0;
+v0x55d99e5c22f0_0 .var "b", 3 0;
+v0x55d99e5c23d0_0 .net "bout_fs1", 0 0, L_0x55d99e5c2c90;  1 drivers
+v0x55d99e5c2470_0 .net "bout_fs2", 0 0, L_0x55d99e5c3550;  1 drivers
+v0x55d99e5c2510_0 .net "bout_fs3", 0 0, L_0x55d99e5c3e50;  1 drivers
+v0x55d99e5c25b0_0 .net "s", 4 0, L_0x55d99e5c47a0;  1 drivers
+L_0x55d99e5c2dd0 .part v0x55d99e5c21f0_0, 0, 1;
+L_0x55d99e5c2f00 .part v0x55d99e5c22f0_0, 0, 1;
+L_0x55d99e5c3690 .part v0x55d99e5c21f0_0, 1, 1;
+L_0x55d99e5c37c0 .part v0x55d99e5c22f0_0, 1, 1;
+L_0x55d99e5c3f90 .part v0x55d99e5c21f0_0, 2, 1;
+L_0x55d99e5c40c0 .part v0x55d99e5c22f0_0, 2, 1;
+o0x7fa02f580378 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7fa02f5807c8 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7fa02f580c18 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7fa02f581068 .functor BUFZ 1, C4<z>; HiZ drive
+LS_0x55d99e5c47a0_0_0 .concat8 [ 1 1 1 1], o0x7fa02f580378, o0x7fa02f5807c8, o0x7fa02f580c18, o0x7fa02f581068;
+LS_0x55d99e5c47a0_0_4 .concat8 [ 1 0 0 0], L_0x55d99e5c4710;
+L_0x55d99e5c47a0 .concat8 [ 4 1 0 0], LS_0x55d99e5c47a0_0_0, LS_0x55d99e5c47a0_0_4;
+L_0x55d99e5c4890 .part v0x55d99e5c21f0_0, 3, 1;
+L_0x55d99e5c4aa0 .part v0x55d99e5c22f0_0, 3, 1;
+S_0x55d99e593770 .scope module, "FS1" "fullAdder" 2 26, 2 13 0, S_0x55d99e5974f0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s1"
+    .port_info 1 /OUTPUT 1 "borrows"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+    .port_info 4 /INPUT 1 "borrowed"
+L_0x55d99e5c2c90 .functor OR 1, L_0x55d99e5c2830, L_0x55d99e5c2b60, C4<0>, C4<0>;
+v0x55d99e5bd230_0 .net "a", 0 0, L_0x55d99e5c2dd0;  1 drivers
+v0x55d99e5bd2f0_0 .net "b", 0 0, L_0x55d99e5c2f00;  1 drivers
+L_0x7fa02f537018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x55d99e5bd3c0_0 .net "borrowed", 0 0, L_0x7fa02f537018;  1 drivers
+v0x55d99e5bd4c0_0 .net "borrows", 0 0, L_0x55d99e5c2c90;  alias, 1 drivers
+v0x55d99e5bd560_0 .net "bout_sub1", 0 0, L_0x55d99e5c2830;  1 drivers
+v0x55d99e5bd650_0 .net "bout_sub2", 0 0, L_0x55d99e5c2b60;  1 drivers
+v0x55d99e5bd720_0 .net "out_sub1", 0 0, L_0x55d99e5c2750;  1 drivers
+v0x55d99e5bd810_0 .net "s", 0 0, L_0x55d99e5c2a80;  1 drivers
+v0x55d99e5bd8b0_0 .net "s1", 0 0, o0x7fa02f580378;  0 drivers
+S_0x55d99e597cd0 .scope module, "Sub1" "halfSub" 2 16, 2 5 0, S_0x55d99e593770;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c2670 .functor NOT 1, L_0x55d99e5c2dd0, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c2750 .functor XOR 1, L_0x55d99e5c2dd0, L_0x55d99e5c2f00, C4<0>, C4<0>;
+L_0x55d99e5c2830 .functor AND 1, L_0x55d99e5c2670, L_0x55d99e5c2f00, C4<1>, C4<1>;
+v0x55d99e595dd0_0 .net "a", 0 0, L_0x55d99e5c2dd0;  alias, 1 drivers
+v0x55d99e5947e0_0 .net "b", 0 0, L_0x55d99e5c2f00;  alias, 1 drivers
+v0x55d99e592dc0_0 .net "borrowIn", 0 0, L_0x55d99e5c2830;  alias, 1 drivers
+v0x55d99e5bc950_0 .net "not_a", 0 0, L_0x55d99e5c2670;  1 drivers
+v0x55d99e5bca10_0 .net "s0", 0 0, L_0x55d99e5c2750;  alias, 1 drivers
+S_0x55d99e5bcba0 .scope module, "Sub2" "halfSub" 2 17, 2 5 0, S_0x55d99e593770;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c2960 .functor NOT 1, L_0x55d99e5c2750, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c2a80 .functor XOR 1, L_0x55d99e5c2750, L_0x7fa02f537018, C4<0>, C4<0>;
+L_0x55d99e5c2b60 .functor AND 1, L_0x55d99e5c2960, L_0x7fa02f537018, C4<1>, C4<1>;
+v0x55d99e5bce00_0 .net "a", 0 0, L_0x55d99e5c2750;  alias, 1 drivers
+v0x55d99e5bcea0_0 .net "b", 0 0, L_0x7fa02f537018;  alias, 1 drivers
+v0x55d99e5bcf40_0 .net "borrowIn", 0 0, L_0x55d99e5c2b60;  alias, 1 drivers
+v0x55d99e5bcfe0_0 .net "not_a", 0 0, L_0x55d99e5c2960;  1 drivers
+v0x55d99e5bd0a0_0 .net "s0", 0 0, L_0x55d99e5c2a80;  alias, 1 drivers
+S_0x55d99e5bd980 .scope module, "FS2" "fullAdder" 2 27, 2 13 0, S_0x55d99e5974f0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s1"
+    .port_info 1 /OUTPUT 1 "borrows"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+    .port_info 4 /INPUT 1 "borrowed"
+L_0x55d99e5c3550 .functor OR 1, L_0x55d99e5c31e0, L_0x55d99e5c3420, C4<0>, C4<0>;
+v0x55d99e5be9b0_0 .net "a", 0 0, L_0x55d99e5c3690;  1 drivers
+v0x55d99e5bea70_0 .net "b", 0 0, L_0x55d99e5c37c0;  1 drivers
+v0x55d99e5beb40_0 .net "borrowed", 0 0, L_0x55d99e5c2c90;  alias, 1 drivers
+v0x55d99e5bec60_0 .net "borrows", 0 0, L_0x55d99e5c3550;  alias, 1 drivers
+v0x55d99e5bed00_0 .net "bout_sub1", 0 0, L_0x55d99e5c31e0;  1 drivers
+v0x55d99e5bedf0_0 .net "bout_sub2", 0 0, L_0x55d99e5c3420;  1 drivers
+v0x55d99e5bee90_0 .net "out_sub1", 0 0, L_0x55d99e5c3150;  1 drivers
+v0x55d99e5bef80_0 .net "s", 0 0, L_0x55d99e5c3390;  1 drivers
+v0x55d99e5bf020_0 .net "s1", 0 0, o0x7fa02f5807c8;  0 drivers
+S_0x55d99e5bdba0 .scope module, "Sub1" "halfSub" 2 16, 2 5 0, S_0x55d99e5bd980;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c30c0 .functor NOT 1, L_0x55d99e5c3690, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c3150 .functor XOR 1, L_0x55d99e5c3690, L_0x55d99e5c37c0, C4<0>, C4<0>;
+L_0x55d99e5c31e0 .functor AND 1, L_0x55d99e5c30c0, L_0x55d99e5c37c0, C4<1>, C4<1>;
+v0x55d99e5bde10_0 .net "a", 0 0, L_0x55d99e5c3690;  alias, 1 drivers
+v0x55d99e5bdef0_0 .net "b", 0 0, L_0x55d99e5c37c0;  alias, 1 drivers
+v0x55d99e5bdfb0_0 .net "borrowIn", 0 0, L_0x55d99e5c31e0;  alias, 1 drivers
+v0x55d99e5be080_0 .net "not_a", 0 0, L_0x55d99e5c30c0;  1 drivers
+v0x55d99e5be140_0 .net "s0", 0 0, L_0x55d99e5c3150;  alias, 1 drivers
+S_0x55d99e5be2d0 .scope module, "Sub2" "halfSub" 2 17, 2 5 0, S_0x55d99e5bd980;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c3270 .functor NOT 1, L_0x55d99e5c3150, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c3390 .functor XOR 1, L_0x55d99e5c3150, L_0x55d99e5c2c90, C4<0>, C4<0>;
+L_0x55d99e5c3420 .functor AND 1, L_0x55d99e5c3270, L_0x55d99e5c2c90, C4<1>, C4<1>;
+v0x55d99e5be530_0 .net "a", 0 0, L_0x55d99e5c3150;  alias, 1 drivers
+v0x55d99e5be600_0 .net "b", 0 0, L_0x55d99e5c2c90;  alias, 1 drivers
+v0x55d99e5be6d0_0 .net "borrowIn", 0 0, L_0x55d99e5c3420;  alias, 1 drivers
+v0x55d99e5be7a0_0 .net "not_a", 0 0, L_0x55d99e5c3270;  1 drivers
+v0x55d99e5be840_0 .net "s0", 0 0, L_0x55d99e5c3390;  alias, 1 drivers
+S_0x55d99e5bf1a0 .scope module, "FS3" "fullAdder" 2 28, 2 13 0, S_0x55d99e5974f0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s1"
+    .port_info 1 /OUTPUT 1 "borrows"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+    .port_info 4 /INPUT 1 "borrowed"
+L_0x55d99e5c3e50 .functor OR 1, L_0x55d99e5c3a40, L_0x55d99e5c3d20, C4<0>, C4<0>;
+v0x55d99e5c01e0_0 .net "a", 0 0, L_0x55d99e5c3f90;  1 drivers
+v0x55d99e5c02a0_0 .net "b", 0 0, L_0x55d99e5c40c0;  1 drivers
+v0x55d99e5c0370_0 .net "borrowed", 0 0, L_0x55d99e5c3550;  alias, 1 drivers
+v0x55d99e5c0490_0 .net "borrows", 0 0, L_0x55d99e5c3e50;  alias, 1 drivers
+v0x55d99e5c0530_0 .net "bout_sub1", 0 0, L_0x55d99e5c3a40;  1 drivers
+v0x55d99e5c0620_0 .net "bout_sub2", 0 0, L_0x55d99e5c3d20;  1 drivers
+v0x55d99e5c06c0_0 .net "out_sub1", 0 0, L_0x55d99e5c3960;  1 drivers
+v0x55d99e5c07b0_0 .net "s", 0 0, L_0x55d99e5c3c90;  1 drivers
+v0x55d99e5c0850_0 .net "s1", 0 0, o0x7fa02f580c18;  0 drivers
+S_0x55d99e5bf3d0 .scope module, "Sub1" "halfSub" 2 16, 2 5 0, S_0x55d99e5bf1a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c38f0 .functor NOT 1, L_0x55d99e5c3f90, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c3960 .functor XOR 1, L_0x55d99e5c3f90, L_0x55d99e5c40c0, C4<0>, C4<0>;
+L_0x55d99e5c3a40 .functor AND 1, L_0x55d99e5c38f0, L_0x55d99e5c40c0, C4<1>, C4<1>;
+v0x55d99e5bf640_0 .net "a", 0 0, L_0x55d99e5c3f90;  alias, 1 drivers
+v0x55d99e5bf720_0 .net "b", 0 0, L_0x55d99e5c40c0;  alias, 1 drivers
+v0x55d99e5bf7e0_0 .net "borrowIn", 0 0, L_0x55d99e5c3a40;  alias, 1 drivers
+v0x55d99e5bf8b0_0 .net "not_a", 0 0, L_0x55d99e5c38f0;  1 drivers
+v0x55d99e5bf970_0 .net "s0", 0 0, L_0x55d99e5c3960;  alias, 1 drivers
+S_0x55d99e5bfb00 .scope module, "Sub2" "halfSub" 2 17, 2 5 0, S_0x55d99e5bf1a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c3b70 .functor NOT 1, L_0x55d99e5c3960, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c3c90 .functor XOR 1, L_0x55d99e5c3960, L_0x55d99e5c3550, C4<0>, C4<0>;
+L_0x55d99e5c3d20 .functor AND 1, L_0x55d99e5c3b70, L_0x55d99e5c3550, C4<1>, C4<1>;
+v0x55d99e5bfd60_0 .net "a", 0 0, L_0x55d99e5c3960;  alias, 1 drivers
+v0x55d99e5bfe30_0 .net "b", 0 0, L_0x55d99e5c3550;  alias, 1 drivers
+v0x55d99e5bff00_0 .net "borrowIn", 0 0, L_0x55d99e5c3d20;  alias, 1 drivers
+v0x55d99e5bffd0_0 .net "not_a", 0 0, L_0x55d99e5c3b70;  1 drivers
+v0x55d99e5c0070_0 .net "s0", 0 0, L_0x55d99e5c3c90;  alias, 1 drivers
+S_0x55d99e5c09d0 .scope module, "FS4" "fullAdder" 2 29, 2 13 0, S_0x55d99e5974f0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s1"
+    .port_info 1 /OUTPUT 1 "borrows"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+    .port_info 4 /INPUT 1 "borrowed"
+L_0x55d99e5c4710 .functor OR 1, L_0x55d99e5c4350, L_0x55d99e5c45e0, C4<0>, C4<0>;
+v0x55d99e5c1a00_0 .net "a", 0 0, L_0x55d99e5c4890;  1 drivers
+v0x55d99e5c1ac0_0 .net "b", 0 0, L_0x55d99e5c4aa0;  1 drivers
+v0x55d99e5c1b90_0 .net "borrowed", 0 0, L_0x55d99e5c3e50;  alias, 1 drivers
+v0x55d99e5c1cb0_0 .net "borrows", 0 0, L_0x55d99e5c4710;  1 drivers
+v0x55d99e5c1d50_0 .net "bout_sub1", 0 0, L_0x55d99e5c4350;  1 drivers
+v0x55d99e5c1e40_0 .net "bout_sub2", 0 0, L_0x55d99e5c45e0;  1 drivers
+v0x55d99e5c1ee0_0 .net "out_sub1", 0 0, L_0x55d99e5c42c0;  1 drivers
+v0x55d99e5c1fd0_0 .net "s", 0 0, L_0x55d99e5c4550;  1 drivers
+v0x55d99e5c2070_0 .net "s1", 0 0, o0x7fa02f581068;  0 drivers
+S_0x55d99e5c0bd0 .scope module, "Sub1" "halfSub" 2 16, 2 5 0, S_0x55d99e5c09d0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c4230 .functor NOT 1, L_0x55d99e5c4890, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c42c0 .functor XOR 1, L_0x55d99e5c4890, L_0x55d99e5c4aa0, C4<0>, C4<0>;
+L_0x55d99e5c4350 .functor AND 1, L_0x55d99e5c4230, L_0x55d99e5c4aa0, C4<1>, C4<1>;
+v0x55d99e5c0e60_0 .net "a", 0 0, L_0x55d99e5c4890;  alias, 1 drivers
+v0x55d99e5c0f40_0 .net "b", 0 0, L_0x55d99e5c4aa0;  alias, 1 drivers
+v0x55d99e5c1000_0 .net "borrowIn", 0 0, L_0x55d99e5c4350;  alias, 1 drivers
+v0x55d99e5c10d0_0 .net "not_a", 0 0, L_0x55d99e5c4230;  1 drivers
+v0x55d99e5c1190_0 .net "s0", 0 0, L_0x55d99e5c42c0;  alias, 1 drivers
+S_0x55d99e5c1320 .scope module, "Sub2" "halfSub" 2 17, 2 5 0, S_0x55d99e5c09d0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s0"
+    .port_info 1 /OUTPUT 1 "borrowIn"
+    .port_info 2 /INPUT 1 "a"
+    .port_info 3 /INPUT 1 "b"
+L_0x55d99e5c4430 .functor NOT 1, L_0x55d99e5c42c0, C4<0>, C4<0>, C4<0>;
+L_0x55d99e5c4550 .functor XOR 1, L_0x55d99e5c42c0, L_0x55d99e5c3e50, C4<0>, C4<0>;
+L_0x55d99e5c45e0 .functor AND 1, L_0x55d99e5c4430, L_0x55d99e5c3e50, C4<1>, C4<1>;
+v0x55d99e5c1580_0 .net "a", 0 0, L_0x55d99e5c42c0;  alias, 1 drivers
+v0x55d99e5c1650_0 .net "b", 0 0, L_0x55d99e5c3e50;  alias, 1 drivers
+v0x55d99e5c1720_0 .net "borrowIn", 0 0, L_0x55d99e5c45e0;  alias, 1 drivers
+v0x55d99e5c17f0_0 .net "not_a", 0 0, L_0x55d99e5c4430;  1 drivers
+v0x55d99e5c1890_0 .net "s0", 0 0, L_0x55d99e5c4550;  alias, 1 drivers
+    .scope S_0x55d99e5974f0;
+T_0 ;
+    %vpi_call 2 33 "$display", "Exemplo0802 - Subtrator Completo" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Exemplo_0802.v";

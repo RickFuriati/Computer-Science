@@ -1,0 +1,33 @@
+Aluno: Ricardo Henrique Guedes Furiati
+Matrícula: 752959
+Curso: Ciência da Computação - Manhã 
+Disciplina: Arquitetura de Computadores
+
+--------------- Guia 08 ---------------
+
+_________________________________________________
+01)Tabela Verdade Para somador 
+_________________________________________________
+        a+b
+ ___________________    Meia Soma: (V corresponde ao "Vai Um" ou "Carry out")
+| m | a b | S  | V  |  S= (a'.b) + (a.b')
+|---|-----|----|----|  V= (a.b)
+| 0 | 0 0 | 0  | 0  |   
+| 1 | 0 1 | 1  | 0  |
+| 2 | 1 0 | 1  | 0  |
+| 3 | 1 1 | 0  | 1  |
+|___|_____|____|____|
+
+
+_________________________________________________
+02)Tabela Verdade Para subtrator
+_________________________________________________
+        a-b
+___________________    Meia Subtração: (V corresponde ao "Pega Um"/"Empresta Um" ou "Borrow") 
+| m | a b | S  | V  |  S= (a'.b) + (a.b')
+|---|-----|----|----|  V= (a'.b)
+| 0 | 0 0 | 0  | 0  |   
+| 1 | 0 1 | 1  | 1  |
+| 2 | 1 0 | 1  | 0  |
+| 3 | 1 1 | 0  | 0  |
+|___|_____|____|____|

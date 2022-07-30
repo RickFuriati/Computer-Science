@@ -1,0 +1,17 @@
+;Aluno: Ricardo Henrique Guedes Furiati
+;Matricula: 752959
+;Implementação de uma porta lógica XOR
+
+Start:	read
+	jmpn  Done 
+	add   sum 
+	XOR   sum
+	store sum
+	BRP   Start
+Done:	load  sum
+	write
+	stop	
+
+sum:	.data 2 0
+
+

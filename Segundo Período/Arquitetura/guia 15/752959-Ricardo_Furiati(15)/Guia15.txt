@@ -1,0 +1,87 @@
+
+// Guia_15
+// Nome: Ricardo Henrique Guedes Furiati
+// Matricula: 752959
+
+Exercicio 01)
+                            //dado04 = dado01 - dado02 - dado03
+                            LXI H,0000
+                              
+                             MOV A,M
+                             INX H
+                             SUB M
+                             INX H
+                             MOV M,A
+                             MOV A,M
+                             INX H
+                             SUB M
+                             STA 0004
+                             
+                             
+                             HLT
+Exercicio 02)
+                            
+                            //dado04 = dado01 - dado02 + dado03
+			    LXI H,0000
+                             
+                             
+                         
+                             MOV A,M
+                             INX H
+                             SUB M
+			     MOV A,M
+                             INX H
+                             ADD M
+                             INX H
+                             MOV M,A
+                             STA 0004
+                             
+                             
+                             HLT
+
+
+Exercicio 03)
+			     //dado04 = dado01 + dado02 + dado03
+                 
+                             LXI H,0000
+                             
+                             
+                             MOV A,M
+                             INX H
+                             ADD M
+                             MOV A,M
+                             INX H
+                             ADD M
+                             STA 0004
+                             
+                             
+                             HLT
+Exercicio 04)
+                            //dado03 = 2 * dado01 + dado02 / 2
+			    LXI H,0000
+
+			    MOV A,M
+			    imul 2,A
+			    INX H
+                            idiv A,2
+			    ADD M
+			    STA 0003
+
+
+			    HLT
+Exercicio 05)             
+                            //dado03 = 4 * (2 * dado01 - dado02)
+                            LXI H,0000
+
+                            MOV A,M
+			    imul 2,A
+			    INX H
+			    SUB M
+                            imul 4,M
+			    STA 0003
+
+
+			    HLT
+
+
+

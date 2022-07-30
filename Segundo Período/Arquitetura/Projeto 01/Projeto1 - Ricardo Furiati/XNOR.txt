@@ -1,0 +1,20 @@
+;Aluno: Ricardo Henrique Guedes Furiati
+;Matricula: 752959
+;Implementação de uma porta lógica XNOR
+
+Start:	IN	
+	BRA  Test
+in1-Ok:	STO  op
+	IN
+        BRA  Test2
+in2-Ok: NAND  op
+        NOT
+        OUT
+        BRA  Start
+Test:   BRP  in1-Ok
+        BRZ  in1-Ok
+Test2:  BRP  in2-Ok
+        BRZ  in2-Ok
+Done:   HLT
+
+op:	.data 2 0

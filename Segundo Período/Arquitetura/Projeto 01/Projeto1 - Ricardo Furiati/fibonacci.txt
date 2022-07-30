@@ -1,0 +1,27 @@
+;Aluno: Ricardo Henrique Guedes Furiati
+;Matricula: 752959
+;Implementação da sequencia de Fibonacci
+
+Start:  LDA  b
+        OUT
+        OUT
+Loop:   LDA  b
+        ADD  a		
+        STO  r
+        LDA  b
+        STO  a
+        LDA  r
+        STO  b  
+        SUB  cinco
+        BRP  Done
+        BRZ  Done
+        LDA  r
+        OUT
+        BRA  Loop
+Done:   HLT  		
+
+a:	.data 2 2 [1]; operando a
+b:      .data 2 2 [1]; operando b
+r:      .data 2 0 ; resultado
+cinco:  .data 2 2 [5]
+; 1 1 2 3 5

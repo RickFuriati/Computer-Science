@@ -7,7 +7,7 @@ Trabalhos desenvolvidos para reforçar e entender os conceitos estudados na prá
   - *filmes.zip:* Banco de dados utilizado, deve estar localizado na pasta "tmp"
   - *Arq.java / MyIO.java*: Bibliotecas utilizadas para facilitar operações comuns no java. (Devem estar na pasta do programa)
 
-Cada questão dos trabalhos possuem o código desenvolvido, entrada e saída padrão e a saída gerada a partir do código desenvolvido.
+Cada questão dos trabalhos possui o código desenvolvido, entrada e saída padrão e a saída gerada a partir do código desenvolvido.
 Algumas questões apresentam arquivos de log com o tempo de execução e numero de comparações e movimentações entre registros.
 
 ### Conteúdo

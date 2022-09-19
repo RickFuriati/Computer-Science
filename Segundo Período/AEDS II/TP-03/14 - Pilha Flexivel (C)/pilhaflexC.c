@@ -136,16 +136,7 @@ void ler(char *nomeArquivo,Filme *novoFilme){
     strcpy(pasta,"/tmp/filmes/");
     strcat(pasta,nomeArquivo);
     char nome[1000];
-    //strcpy(pasta,strcat("/tmp/filmes/",nomeArquivo));
     
-    /*char *nome=NULL;
-    char *tituloOriginal=NULL;
-    char *dataLancamento=NULL;
-    int *duracao=NULL;
-    char *genero=NULL;
-    char *idiomaOriginal=NULL;
-    char *situacao=NULL;
-    float *orcamento=NULL;*/
   
     strcpy(novoFilme->tituloOriginal,"bug");
 
@@ -301,41 +292,7 @@ void ler(char *nomeArquivo,Filme *novoFilme){
             //strcpy(novoFilme->palavrasChave[0],atoi(contaPalavras)); 
                 
         }
-        /*if(strstr(linha, "<h4><bdi>Palavras-chave</bdi></h4>") != NULL) {
-                int contaPalavras=0;
-                char keywords[1000];
-                // Skip two lines until keywords starts
-                for(int i = 0; i < 2; i++) read = getline(&linha, &tamanho, arquivo);
-
-                char tmp_line[strlen(linha)];
-
-                strcpy(tmp_line, linha);
-                
-                strcpy(keywords,substr(tmp_line, 5, strlen(linha) - 5));
-
-                if(strcmp(keywords, "<p><bdi>Nenhuma palavra-chave foi adicionada.</bdi></p>")) {
-
-                    // Skip more two lines until keywords starts
-                    for(int x = 0; x < 2; x++) read = getline(&linha, &tamanho, arquivo);
-
-                    while(true) {
-                        
-                        if(strstr(linha, "</ul>") != NULL) break;
-
-                        if(strstr(linha, "<li>") != NULL) {
-                            contaPalavras++;
-                            extractOnlyText(linha, tmp_line);
-
-                            strcpy(stringAux,substr(tmp_line, 9, strlen(linha) - 8));
-
-                            strcpy(novoFilme->palavrasChave[contaPalavras],removeLeadingSpaces(stringAux));
-                        }
-
-                        read = getline(&linha, &tamanho, arquivo);
-                    }
-                }
-            }
-        */
+        
         
     }
     if(strcmp(novoFilme->tituloOriginal,"bug")==0){
@@ -405,114 +362,7 @@ void mostrarRecursivo(int contador,Celula *i) {
 
 
 
-/*void mostrar (){
-   int i;
 
-    for(i = 0; i < n; i++){
-      //rintf("[%i] %s\n",i,array[i].tituloOriginal);
-      //imprimir(&array[i]);
-      printf("[%i] ",i);
-      imprimir(&array[i]);
-      
-    }
-
-}
-
-void inserirInicio(Filme x){
-    if(n>=MAXTAM){
-      printf("Erro ao inserir!");
-      exit(1);
-    }
-    for(int i=n;i>0;i--){
-        array[i]=array[i-1];
-    }
-    array[0]=x;
-    n++;
-}
-void inserirFim(Filme x){
-    if(n>=MAXTAM){
-        printf("Erro ao inserir!");
-        exit(1);
-    }
-    array[n]=x;
-    n++;
-}
-
-void inserir(Filme x, int pos){
-    int i;
-    if(n >= MAXTAM || pos < 0 || pos > n){
-        printf("Erro ao inserir!");
-        exit(1);
-    }
-    for(i = n; i > pos; i--){
-      array[i] = array[i-1];
-    }
-    array[pos] = x;
-    n++;
-}
-
-Filme removerInicio() {
-   int i;
-   Filme resp;
-
-   //validar remocao
-   if (n == 0) {
-      printf("Erro ao remover!");
-      exit(1);
-   }
-
-   resp = array[0];
-   n--;
-
-    for(i = 0; i < n; i++){
-      array[i] = array[i+1];
-    }
-   return resp;
-}
-Filme removerFim() {
-
-   //validar remocao
-   if (n == 0) {
-      printf("Erro ao remover!");
-      exit(1);
-   }
-
-   return array[--n];
-}
-Filme remover(int pos) {
-   int i;
-   Filme resp;
-
-   //validar remocao
-   if (n == 0 || pos < 0 || pos >= n) {
-      printf("Erro ao remover!");
-      exit(1);
-   }
-
-   resp = array[pos];
-   n--;
-
-   for(i = pos; i < n; i++){
-      array[i] = array[i+1];
-   }
-
-   return resp;
-}
-void mostrar (){
-   int i;
-
-    for(i = 0; i < n; i++){
-      //rintf("[%i] %s\n",i,array[i].tituloOriginal);
-      //imprimir(&array[i]);
-        /*if(i==9){ 
-            strcpy(array[i].nome,"007: Sem Tempo para Morrer ");
-        }
-      printf("[%i] ",i);
-      imprimir(&array[i]);
-      
-    }
-
-}*/
 
 int main(void){
     char nomeArquivo[100];

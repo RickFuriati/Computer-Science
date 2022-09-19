@@ -138,14 +138,7 @@ void ler(char *nomeArquivo,Filme *novoFilme){
     char nome[1000];
     //strcpy(pasta,strcat("/tmp/filmes/",nomeArquivo));
     
-    /*char *nome=NULL;
-    char *tituloOriginal=NULL;
-    char *dataLancamento=NULL;
-    int *duracao=NULL;
-    char *genero=NULL;
-    char *idiomaOriginal=NULL;
-    char *situacao=NULL;
-    float *orcamento=NULL;*/
+ 
   
     strcpy(novoFilme->tituloOriginal,"bug");
 

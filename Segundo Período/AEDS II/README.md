@@ -1,5 +1,5 @@
 # Algoritmos e Estruturas de Dados II
-Conceitos mais Aprofundados de programações, com foco em estruturas de dados e algoritmos de pesquisa e ordenação.
+Conceitos mais Aprofundados de programação, com foco em estruturas de dados e algoritmos de pesquisa e ordenação.
 
 ### Trabalhos Praticos
 

@@ -3,10 +3,10 @@
 ### *Agosto - Dezembro 2022*
 
 **Disciplinas:**
-- [Algoritmos e Estruturas de Dados II](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/AEDS%20II)
-- Bancos de Dados
-- [Arquitetura de Computadores](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/Arquitetura)
-- Introdução a Sistemas Inteligentes
-- [Trabalho Interdisciplinar: Bancos de Dados](https://github.com/RickFuriati/Computer-Science/tree/main/Segundo%20Per%C3%ADodo/TI:BD)
-- Cultura Religiosa
+- [Algoritmos e Estruturas de Dados III](https://github.com/RickFuriati/Computer-Science/tree/main/Terceiro%20Per%C3%ADodo/AEDS%20III)
+- [Arquitetura de Computadores II](https://github.com/RickFuriati/Computer-Science/tree/main/Terceiro%20Per%C3%ADodo/AC%20II)
+- Cálculo II
+- Engenharia de Software
+- Linguagens de Programação
+- Trabalho Interdisciplinar III: Pesquisa Aplicada
 

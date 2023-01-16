@@ -5,8 +5,9 @@ Conceitos relacionados a memória secundária, criptografia e compressão de dad
 
 Trabalhos desenvolvidos com o objetivo de manipular registros em memória secundária. 
   - O conceito-base para o desenvolvimento foi a implementação de contas bancárias fictícias armazenadas em memória secundária.
-  - TP-01: CRUD em arquivo indexado, Ordenação de registros, criação de índice (árvore B+, Hashing estendido, Lista invertida).
-  - TP-02: Compressão de dados (Huffman, LZW).
+  - *TP-01:* CRUD em arquivo indexado, Ordenação de registros, criação de índice (árvore B+, Hashing estendido, Lista invertida).
+  - *TP-02:* Compressão de dados (Huffman, LZW).
+  - *datafile.bin*: Arquivo de dados ficticios para realização das operações (arquivo em binário)
 
 ### Conteúdo
 
